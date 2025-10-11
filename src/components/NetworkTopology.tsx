@@ -67,7 +67,7 @@ export const NetworkTopology = () => {
   return (
     <Card className="bg-card border-border p-6">
       <div className="mb-4 flex items-center justify-between">
-        <h2 className="text-xl font-bold text-primary">11NETWORK TOPOLOGY</h2>
+        <h2 className="text-xl font-bold text-primary">example NETWORK TOPOLOGY</h2>
         <Badge variant="outline" className="border-primary text-primary">
           <Radio className="mr-1 h-3 w-3" />
           {nodes.filter(n => n.status === "active").length}/{nodes.length} ACTIVE
