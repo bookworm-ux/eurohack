@@ -5,12 +5,9 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Shield, Radio, FileText } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
 const Index = () => {
   const navigate = useNavigate();
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border bg-card/50 backdrop-blur">
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
@@ -25,15 +22,7 @@ const Index = () => {
           </div>
           
           <div className="flex items-center gap-2">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => navigate("/evaluation")}
-              className="gap-2 border-primary text-primary hover:bg-primary/10"
-            >
-              <FileText className="h-3 w-3" />
-              Evaluation & Specs
-            </Button>
+            
             <Badge variant="outline" className="border-primary text-primary">
               <Shield className="mr-1 h-3 w-3" />
               ZERO-TRUST ENABLED
@@ -79,8 +68,6 @@ const Index = () => {
           </div>
         </div>
       </main>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
